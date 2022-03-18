@@ -21,4 +21,4 @@ app.get("/", (req,res)=>{
 
 
 
-app.listen(port, () =>{console.log("server running")});
+app.listen(process.env.PORT || 5000);
