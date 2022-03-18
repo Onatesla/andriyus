@@ -2,7 +2,7 @@
 const fs = require('fs');
 const express = require('express');
 const app =express();
-const port=3001;
+const port=80;
 
 app.use(express.json())
 app.use(express.urlencoded())
@@ -22,6 +22,4 @@ app.get("/", (req,res)=>{
 
 
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+app.listen(process.env.PORT || 8080);
