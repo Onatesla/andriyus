@@ -9,7 +9,7 @@ router.get("/todos", function(req, res) {
   res.json(todos);
 });
 
-app.set('port', process.env.PORT || 1337);
+app.set('port', process.env.PORT);
 app.use(express.json())
 app.use(express.urlencoded())
 //routes
