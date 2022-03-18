@@ -2,10 +2,14 @@
 const fs = require('fs');
 const express = require('express');
 const app =express();
+const todos = require('todos')
+const router = express.Router();
 
+router.get("/todos", function(req, res) {
+  res.json(todos);
+});
 
-
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 1337);
 app.use(express.json())
 app.use(express.urlencoded())
 //routes
@@ -24,4 +28,4 @@ app.get("/", (req,res)=>{
 
 
 
-app.listen(port);
+app.listen(port, () =>{console.log("server running")});
