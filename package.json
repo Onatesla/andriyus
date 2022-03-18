@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "my express server",
   "main": "server.js",
+  "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "test": "\"echo\\error: no test specified\"",
     "start": "node server.js"
