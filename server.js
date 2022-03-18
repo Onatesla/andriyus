@@ -2,14 +2,7 @@
 const fs = require('fs');
 const express = require('express');
 const app =express();
-const todos = require('todos')
-const router = express.Router();
-
-router.get("/todos", function(req, res) {
-  res.json(todos);
-});
-
-app.set('port', process.env.PORT);
+const port = process.env.port;
 app.use(express.json())
 app.use(express.urlencoded())
 //routes
