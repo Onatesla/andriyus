@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "\"echo\\error: no test specified\"",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "ng build",
+  "heroku-postbuild": "ng build --prod"
   },
   "repository": {
     "type": "git",
