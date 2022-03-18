@@ -8,9 +8,7 @@
   },
   "scripts": {
     "test": "\"echo\\error: no test specified\"",
-    "start": "node server.js",
-    "build": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +20,7 @@
   "author": "Paolo Fontana",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "node-speak": "^0.0.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
