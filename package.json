@@ -10,7 +10,7 @@
     "test": "\"echo\\error: no test specified\"",
     "start": "node server.js",
     "build": "ng build",
-  "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "google-tts-api": "^2.0.2",
-    "mongodb": "^4.4.1",
-    "mongoose": "^6.2.7",
-    "node-speak": "^0.0.2",
-    "say": "^0.16.0",
-    "speech-synthesis": "^0.3.2",
-    "window": "^4.2.7"
+    "node-speak": "^0.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
