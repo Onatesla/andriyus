@@ -15,7 +15,10 @@ app.post("/posta", (req,res)=> {
    }
    res.send({ message: `io odio ${nome} e mi deve pure soldi` })
 })
-   
+
+app.get("/", (req,res)=>{
+  res.send("idle...")
+})
 
 
 
