@@ -27,13 +27,13 @@ app.use(express.urlencoded())
 //routes
 app.post("/posta", (req,res)=> {
  
-
+res.send("okok")
 })
 
 app.get("/", (req,res)=>{
-  res.send({message: `${ipseDixit[value]}};
+  res.send({message: ` ${ipseDixit[value] }`})
 })
 
 
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000)
