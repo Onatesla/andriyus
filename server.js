@@ -21,7 +21,11 @@ const ipseDixit =
 
 
 ]
-const value =  (Math.random() * (0+12) + 1);
+
+function getPhrases() {
+  const value =  (Math.random() * (0+12) + 1);
+  var phrase = ipseDixit[value] 
+}
 app.use(express.json())
 app.use(express.urlencoded())
 //routes
@@ -31,7 +35,8 @@ res.send("okok")
 })
 
 app.get("/", (req,res)=>{
-  res.send({message: ` ${ipseDixit[value] }`})
+  getPhrases();
+  res.send({message: ` ${phrase}`})
 })
 
 
