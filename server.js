@@ -26,13 +26,14 @@ const ipseDixit =
 app.use(express.json())
 app.use(express.urlencoded())
 //routes
-app.post("/posta", (req,res)=> {
- 
-res.send("okok")
+app.post("/post", (req,res)=> {
+const add = req.body.message;
+console.log(add)
+ipseDixit.push(add);
 })
 
 app.get("/", (req,res)=>{
-  const value =  Math.round(Math.random() * (0+12) + 1);
+  const value =  Math.round(Math.random() * (0+ipseDixit.length-1) * 1);
   console.log(value);
   var phrase = ipseDixit[value] 
   res.send({message: ` ${phrase}`})
